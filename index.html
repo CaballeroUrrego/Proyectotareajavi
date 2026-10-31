@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio - Unidad 1</title>
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado / Navegación -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-network-wired"></i> MiPortafolio
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-controls="navMenu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li>
+              <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+            </li>
+            <li>
+              <a href="#necesidades"
+                ><i class="fa-solid fa-database"></i> Necesidades</a
+              >
+            </li>
+            <li>
+              <a href="#soluciones"
+                ><i class="fa-solid fa-shield-halved"></i> Soluciones</a
+              >
+            </li>
+            <li>
+              <a href="#criptografia"
+                ><i class="fa-solid fa-key"></i> Encriptación</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+      <!-- Sección Hero -->
+      <section id="inicio" class="hero">
+        <div class="container">
+          <h1>Unidad 1: Transmisión y Almacenamiento de Información</h1>
+          <p>
+            Análisis teórico y práctico de las necesidades en la gestión de
+            datos y sus soluciones técnicas.
+          </p>
+          <a href="#criptografia" class="btn">
+            <i class="fa-solid fa-lock"></i> Ir a Criptografía
+          </a>
+        </div>
+      </section>
+
+      <!-- Sección de Necesidades -->
+      <section id="necesidades" class="services">
+        <div class="container">
+          <h2 class="section-title">Necesidades en la Información</h2>
+          <div class="grid grid-two-columns">
+            <div class="card">
+              <i class="fa-solid fa-hdd card-icon"></i>
+              <h3>Almacenamiento</h3>
+              <p>
+                Gestión de datos en escalas (Bits, Bytes, KB, MB, GB, TB),
+                representación mediante estándar ASCII o Unicode e integridad
+                física/lógica en memorias RAM y discos.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-satellite-dish card-icon"></i>
+              <h3>Transmisión</h3>
+              <p>
+                Control de perturbaciones y ruido en los canales de
+                comunicación, mitigación de pérdida de paquetes y garantía de
+                confidencialidad en el canal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Soluciones -->
+      <section id="soluciones" class="services bg-light">
+        <div class="container">
+          <h2 class="section-title">Soluciones Implementadas</h2>
+          <div class="grid">
+            <div class="card">
+              <i class="fa-solid fa-file-zipper card-icon"></i>
+              <h3>Compresión</h3>
+              <p>
+                Optimización del ancho de banda y espacio reduciendo la entropía
+                del mensaje mediante empaquetamiento.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-check-double card-icon"></i>
+              <h3>Detección de Errores</h3>
+              <p>
+                Uso de dígitos de verificación y validación en matrices de datos
+                para corregir fallos en la transferencia
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-user-shield card-icon"></i>
+              <h3>Criptografía</h3>
+              <p>
+                Transformación del texto plano usando el principio:
+                <code>Mensaje + Clave = Mensaje Cifrado</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Criptografía Interactiva -->
+      <section id="criptografia" class="services">
+        <div class="container">
+          <h2 class="section-title">
+            Encriptación del Título de Canción Favorita
+          </h2>
+          <div class="card interactive-card">
+            <p>
+              Ingresa el título de tu canción favorita para aplicar la fórmula
+              de cifrado por desplazamiento:
+            </p>
+
+            <div class="form-group">
+              <label for="cancionInput">Título de la Canción:</label>
+              <input
+                type="text"
+                id="cancionInput"
+                class="form-input"
+                value="Bohemian Rhapsody"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="claveInput">Clave (Desplazamiento):</label>
+              <input
+                type="number"
+                id="claveInput"
+                class="form-input"
+                value="3"
+                min="1"
+                max="25"
+              />
+            </div>
+
+            <button id="btnEncriptar" class="btn">
+              <i class="fa-solid fa-calculator"></i> Cifrar Canción
+            </button>
+
+            <div class="result-box">
+              <h4>Resultado Cifrado:</h4>
+              <p id="resultadoCifrado" class="encrypted-text">--</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Mi Portafolio - Unidad 1 | Teoría y Análisis de
+          Sistemas[cite: 2, 3]
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,193 +1,513 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio - Unidad 1</title>
-    <!-- Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Estilos Personalizados -->
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <!-- Encabezado / Navegación -->
-    <header class="header">
-      <div class="container">
-        <a href="#" class="logo">
-          <i class="fa-solid fa-network-wired"></i> MiPortafolio
-        </a>
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          type="button"
-          aria-label="Abrir menú"
-          aria-controls="navMenu"
-          aria-expanded="false"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="nav-menu" id="navMenu">
-          <ul>
-            <li>
-              <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
-            </li>
-            <li>
-              <a href="#necesidades"
-                ><i class="fa-solid fa-database"></i> Necesidades</a
-              >
-            </li>
-            <li>
-              <a href="#soluciones"
-                ><i class="fa-solid fa-shield-halved"></i> Soluciones</a
-              >
-            </li>
-            <li>
-              <a href="#criptografia"
-                ><i class="fa-solid fa-key"></i> Encriptación</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Contenido Principal -->
-    <main class="main-content">
-      <!-- Sección Hero -->
-      <section id="inicio" class="hero">
-        <div class="container">
-          <h1>Unidad 1: Transmisión y Almacenamiento de Información</h1>
-          <p>
-            Análisis teórico y práctico de las necesidades en la gestión de
-            datos y sus soluciones técnicas.
-          </p>
-          <a href="#criptografia" class="btn">
-            <i class="fa-solid fa-lock"></i> Ir a Criptografía
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 1: Transmisión y Almacenamiento de Información | Portafolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Encabezado / Navegación Sticky con Glassmorphism -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon-wrap">
+          <i class="fa-solid fa-network-wired"></i>
+        </span>
+        <span>Mi<span class="gradient-text">Portafolio</span></span>
+      </a>
+
+      <!-- Botón Toggle Móvil -->
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="navMenu"
+        aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Menú de Enlaces -->
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li>
+            <a href="#inicio" class="active">
+              <i class="fa-solid fa-house"></i> Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#necesidades">
+              <i class="fa-solid fa-database"></i> Necesidades
+            </a>
+          </li>
+          <li>
+            <a href="#soluciones">
+              <i class="fa-solid fa-shield-halved"></i> Soluciones
+            </a>
+          </li>
+          <li>
+            <a href="#criptografia">
+              <i class="fa-solid fa-key"></i> Encriptación
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="main-content">
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="container">
+        <!-- Pill Badge -->
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>Unidad 1 • Teoría y Fundamentos de Datos</span>
+        </div>
+
+        <!-- Título Principal -->
+        <h1>
+          Transmisión y Almacenamiento <br />
+          <span class="gradient-text">de Información</span>
+        </h1>
+
+        <!-- Descripción -->
+        <p class="hero-description">
+          Análisis teórico y práctico de los modelos de gestión de datos,
+          mitigación de perturbaciones en canales de red y algoritmos criptográficos modernos.
+        </p>
+
+        <!-- Botones CTA -->
+        <div class="hero-cta">
+          <a href="#criptografia" class="btn btn-primary">
+            <i class="fa-solid fa-lock"></i> Probar Cifrado Interactivo
+          </a>
+          <a href="#necesidades" class="btn btn-secondary">
+            <i class="fa-solid fa-layer-group"></i> Explorar Conceptos
           </a>
         </div>
-      </section>
 
-      <!-- Sección de Necesidades -->
-      <section id="necesidades" class="services">
-        <div class="container">
+        <!-- Métricas / Indicadores rápidos -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <i class="fa-solid fa-microchip"></i>
+            <span class="stat-value">ASCII / UTF-8</span>
+            <span class="stat-label">Codificación Estándar</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-wave-square"></i>
+            <span class="stat-value">Control de Ruido</span>
+            <span class="stat-label">Mitigación en Canales</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-shield-cat"></i>
+            <span class="stat-value">Cifrado César</span>
+            <span class="stat-label">Seguridad y Algoritmos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Necesidades -->
+    <section id="necesidades" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// DESAFÍOS TÉCNICOS</span>
           <h2 class="section-title">Necesidades en la Información</h2>
-          <div class="grid grid-two-columns">
-            <div class="card">
-              <i class="fa-solid fa-hdd card-icon"></i>
-              <h3>Almacenamiento</h3>
-              <p>
-                Gestión de datos en escalas (Bits, Bytes, KB, MB, GB, TB),
-                representación mediante estándar ASCII o Unicode e integridad
-                física/lógica en memorias RAM y discos.
-              </p>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-satellite-dish card-icon"></i>
-              <h3>Transmisión</h3>
-              <p>
-                Control de perturbaciones y ruido en los canales de
-                comunicación, mitigación de pérdida de paquetes y garantía de
-                confidencialidad en el canal.
-              </p>
-            </div>
-          </div>
+          <p class="section-subtitle">
+            Retos primordiales para garantizar la persistencia de datos en memoria y su transferencia íntegra a través
+            de medios físicos y lógicos.
+          </p>
         </div>
-      </section>
 
-      <!-- Sección de Soluciones -->
-      <section id="soluciones" class="services bg-light">
-        <div class="container">
-          <h2 class="section-title">Soluciones Implementadas</h2>
-          <div class="grid">
-            <div class="card">
-              <i class="fa-solid fa-file-zipper card-icon"></i>
-              <h3>Compresión</h3>
-              <p>
-                Optimización del ancho de banda y espacio reduciendo la entropía
-                del mensaje mediante empaquetamiento.
-              </p>
+        <div class="grid-2">
+          <!-- Tarjeta: Almacenamiento -->
+          <div class="card">
+            <div class="card-icon-container">
+              <i class="fa-solid fa-hard-drive card-icon"></i>
             </div>
-            <div class="card">
-              <i class="fa-solid fa-check-double card-icon"></i>
-              <h3>Detección de Errores</h3>
-              <p>
-                Uso de dígitos de verificación y validación en matrices de datos
-                para corregir fallos en la transferencia
-              </p>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-user-shield card-icon"></i>
-              <h3>Criptografía</h3>
-              <p>
-                Transformación del texto plano usando el principio:
-                <code>Mensaje + Clave = Mensaje Cifrado</code>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de Criptografía Interactiva -->
-      <section id="criptografia" class="services">
-        <div class="container">
-          <h2 class="section-title">
-            Encriptación del Título de Canción Favorita
-          </h2>
-          <div class="card interactive-card">
+            <h3>Almacenamiento de Información</h3>
             <p>
-              Ingresa el título de tu canción favorita para aplicar la fórmula
-              de cifrado por desplazamiento:
+              Representación precisa de los datos en memorias volátiles (RAM) y no volátiles (discos magnéticos y de
+              estado sólido). Demanda estructuración en sistemas binarios, estándares <strong>ASCII/Unicode</strong> y
+              garantías de integridad física y de jerarquía.
             </p>
 
-            <div class="form-group">
-              <label for="cancionInput">Título de la Canción:</label>
-              <input
-                type="text"
-                id="cancionInput"
-                class="form-input"
-                value="Bohemian Rhapsody"
-              />
+            <!-- Widget Interactivo de Conversión de Unidades -->
+            <div class="card-visual-box">
+              <div class="storage-calculator-header">
+                <span><i class="fa-solid fa-calculator"></i> Escala de unidades:</span>
+                <small>Haz clic para explorar</small>
+              </div>
+              <div class="unit-selector">
+                <button class="unit-btn active" data-unit="bit">Bit</button>
+                <button class="unit-btn" data-unit="byte">Byte</button>
+                <button class="unit-btn" data-unit="kb">KB</button>
+                <button class="unit-btn" data-unit="mb">MB</button>
+                <button class="unit-btn" data-unit="gb">GB</button>
+                <button class="unit-btn" data-unit="tb">TB</button>
+              </div>
+              <div class="unit-display" id="unitDisplay">
+                1 Byte = 8 Bits (Unidad mínima direccionable)
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="claveInput">Clave (Desplazamiento):</label>
-              <input
-                type="number"
-                id="claveInput"
-                class="form-input"
-                value="3"
-                min="1"
-                max="25"
-              />
+            <div class="card-tags">
+              <span class="tag-chip"><i class="fa-solid fa-code"></i> Binario</span>
+              <span class="tag-chip"><i class="fa-solid fa-font"></i> ASCII / UTF-8</span>
+              <span class="tag-chip"><i class="fa-solid fa-memory"></i> Jerarquía RAM/SSD</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta: Transmisión -->
+          <div class="card">
+            <div class="card-icon-container">
+              <i class="fa-solid fa-satellite-dish card-icon"></i>
+            </div>
+            <h3>Transmisión de Información</h3>
+            <p>
+              Propagación de paquetes a través de medios guiados e inalámbricos. Requiere el control continuo de
+              perturbaciones, atenuación electromagnética, ruido térmico y prevención de pérdida de paquetes para
+              preservar la confidencialidad.
+            </p>
+
+            <!-- Simulación visual de canal de transmisión -->
+            <div class="card-visual-box">
+              <div class="storage-calculator-header">
+                <span><i class="fa-solid fa-tower-broadcast"></i> Flujo en Canal de Red:</span>
+                <small>Modelo Shannon-Weaver</small>
+              </div>
+              <div class="channel-simulation">
+                <div class="channel-node">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Emisor</span>
+                  <small>TX limpio</small>
+                </div>
+                <div class="channel-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="channel-node">
+                  <i class="fa-solid fa-bolt-lightning" style="color: #f59e0b;"></i>
+                  <span>Canal</span>
+                  <small>Ruido / Aten.</small>
+                </div>
+                <div class="channel-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="channel-node">
+                  <i class="fa-solid fa-server"></i>
+                  <span>Receptor</span>
+                  <small>RX verificado</small>
+                </div>
+              </div>
             </div>
 
-            <button id="btnEncriptar" class="btn">
-              <i class="fa-solid fa-calculator"></i> Cifrar Canción
-            </button>
-
-            <div class="result-box">
-              <h4>Resultado Cifrado:</h4>
-              <p id="resultadoCifrado" class="encrypted-text">--</p>
+            <div class="card-tags">
+              <span class="tag-chip"><i class="fa-solid fa-signal"></i> Atenuación</span>
+              <span class="tag-chip"><i class="fa-solid fa-triangle-exclamation"></i> Ruido Térmico</span>
+              <span class="tag-chip"><i class="fa-solid fa-boxes-packing"></i> Pérdida Paquetes</span>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- Pie de Página -->
-    <footer class="footer">
+    <!-- Sección de Soluciones -->
+    <section id="soluciones" class="section">
       <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// MÉTODOS Y ARQUITECTURA</span>
+          <h2 class="section-title">Soluciones Implementadas</h2>
+          <p class="section-subtitle">
+            Herramientas de ingeniería informática aplicadas para maximizar la eficiencia del canal y blindar la
+            integridad del mensaje.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Solución 1: Compresión -->
+          <div class="card">
+            <div class="card-icon-container">
+              <i class="fa-solid fa-file-zipper card-icon"></i>
+            </div>
+            <h3>Compresión de Datos</h3>
+            <p>
+              Optimización del ancho de banda y capacidad física reduciendo la redundancia y entropía del mensaje sin
+              comprometer la fidelidad original.
+            </p>
+
+            <!-- Comparación visual de ahorro -->
+            <div class="card-visual-box">
+              <div class="compression-bar-group">
+                <div class="comp-bar-label">
+                  <span>Sin comprimir (Texto plano)</span>
+                  <span>100%</span>
+                </div>
+                <div class="comp-progress">
+                  <div class="comp-progress-fill comp-fill-raw"></div>
+                </div>
+                <div class="comp-bar-label">
+                  <span>Comprimido (Algoritmo LZW/Deflate)</span>
+                  <span>42% (-58%)</span>
+                </div>
+                <div class="comp-progress">
+                  <div class="comp-progress-fill comp-fill-compressed"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag-chip">Shannon</span>
+              <span class="tag-chip">Huffman</span>
+              <span class="tag-chip">Ancho de Banda</span>
+            </div>
+          </div>
+
+          <!-- Solución 2: Detección de Errores -->
+          <div class="card">
+            <div class="card-icon-container">
+              <i class="fa-solid fa-check-double card-icon"></i>
+            </div>
+            <h3>Detección y Corrección</h3>
+            <p>
+              Inclusión de códigos detectores y verificadores matriciales (CRC, paridad, códigos Hamming) para
+              identificar alteraciones en el flujo binario.
+            </p>
+
+            <!-- Diagrama de paridad -->
+            <div class="card-visual-box">
+              <div class="storage-calculator-header">
+                <span>Esquema de Bit de Paridad Par:</span>
+              </div>
+              <div class="unit-display" style="color: #6ee7b7; text-align: center;">
+                1 0 1 1 0 0 1 &rarr; <span
+                  style="background: rgba(16,185,129,0.25); padding: 2px 6px; border-radius: 4px;">Bit: [0]</span>
+                &check;
+              </div>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag-chip">Bit de Paridad</span>
+              <span class="tag-chip">CRC-32</span>
+              <span class="tag-chip">Checksum</span>
+            </div>
+          </div>
+
+          <!-- Solución 3: Criptografía -->
+          <div class="card">
+            <div class="card-icon-container">
+              <i class="fa-solid fa-user-shield card-icon"></i>
+            </div>
+            <h3>Criptografía</h3>
+            <p>
+              Garantía de confidencialidad y autenticidad alterando matemáticamente la representación textual mediante
+              algoritmos y claves secretas.
+            </p>
+
+            <!-- Fórmula Criptográfica -->
+            <div class="formula-callout">
+              <i class="fa-solid fa-lock" style="color: var(--accent-primary);"></i>
+              <code>C = (M + K) mod 26</code>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag-chip">Cifrado Simétrico</span>
+              <span class="tag-chip">Desplazamiento</span>
+              <span class="tag-chip">Confidencialidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Criptografía Interactiva -->
+    <section id="criptografia" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// EXPERIMENTACIÓN EN TIEMPO REAL</span>
+          <h2 class="section-title">Laboratorio de Cifrado </h2>
+          <p class="section-subtitle">
+            Cifra y descifra en tiempo real el título de tu canción favorita o cualquier mensaje mediante el método
+            histórico de sustitución por desplazamiento.
+          </p>
+        </div>
+
+        <div class="crypto-wrapper">
+          <div class="card interactive-card">
+            <!-- Interruptor de Modo (Cifrar / Descifrar) -->
+            <div class="crypto-mode-toggle">
+              <button type="button" class="mode-btn active" id="btnModeEncrypt" data-mode="encrypt">
+                <i class="fa-solid fa-lock"></i> Cifrar (Encriptar)
+              </button>
+              <button type="button" class="mode-btn" id="btnModeDecrypt" data-mode="decrypt">
+                <i class="fa-solid fa-lock-open"></i> Descifrar
+              </button>
+            </div>
+
+            <!-- Píldoras con sugerencias de canciones -->
+            <div class="song-presets">
+              <span class="preset-label">Canciones Sugeridas:</span>
+              <div class="preset-pills">
+                <button type="button" class="preset-pill active" data-song="Bohemian Rhapsody">
+                  Bohemian Rhapsody
+                </button>
+                <button type="button" class="preset-pill" data-song="Hotel California">
+                  Hotel California
+                </button>
+                <button type="button" class="preset-pill" data-song="Imagine">
+                  Imagine
+                </button>
+                <button type="button" class="preset-pill" data-song="Billie Jean">
+                  Billie Jean
+                </button>
+                <button type="button" class="preset-pill" data-song="Starman">
+                  Starman
+                </button>
+              </div>
+            </div>
+
+            <!-- Entrada del Título de la Canción -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="cancionInput" class="form-label">
+                  <i class="fa-solid fa-music" style="color: var(--accent-cyan); margin-right: 4px;"></i>
+                  Título de la Canción o Mensaje:
+                </label>
+                <span class="input-count" id="charCount">17 caracteres</span>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-quote-left input-icon"></i>
+                <input type="text" id="cancionInput" class="form-input" value="Bohemian Rhapsody"
+                  placeholder="Escribe el título aquí..." autocomplete="off" />
+                <button type="button" class="btn-clear-input" id="btnClearInput" title="Limpiar texto"
+                  aria-label="Limpiar campo de texto">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Selector de Clave / Desplazamiento Sincronizado -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="claveInput" class="form-label">
+                  <i class="fa-solid fa-sliders" style="color: var(--accent-primary); margin-right: 4px;"></i>
+                  Clave (Desplazamiento K):
+                </label>
+                <span class="input-count">Rango: 0 a 25 posiciones</span>
+              </div>
+              <div class="key-controls-grid">
+                <div class="key-slider-wrapper">
+                  <input type="range" id="claveRange" class="key-range" min="0" max="25" value="3" />
+                </div>
+                <input type="number" id="claveInput" class="key-number-input" value="3" min="0" max="25" />
+              </div>
+
+              <!-- Visualizador del mapeo del abecedario -->
+              <div class="alphabet-preview-box">
+                <span class="alphabet-label">
+                  <i class="fa-solid fa-repeat"></i> Mapeo actual:
+                </span>
+                <span class="alphabet-shift-visual" id="alphabetShiftVisual">
+                  A &rarr; D &nbsp;|&nbsp; B &rarr; E &nbsp;|&nbsp; C &rarr; F
+                </span>
+              </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+              <button id="btnEncriptar" type="button" class="btn btn-primary" style="flex: 1;">
+                <i class="fa-solid fa-bolt"></i> <span id="btnActionText">Cifrar Mensaje</span>
+              </button>
+            </div>
+
+            <!-- Caja de Resultado Modernizada -->
+            <div class="result-box-modern">
+              <div class="result-header">
+                <h4>
+                  <i class="fa-solid fa-terminal" style="color: var(--accent-emerald);"></i>
+                  <span id="resultTitle">Resultado Cifrado</span>
+                </h4>
+                <span class="result-status-pill" id="resultStatusPill">
+                  <i class="fa-solid fa-check"></i> Activo
+                </span>
+              </div>
+
+              <div class="encrypted-text-wrapper">
+                <p id="resultadoCifrado" class="encrypted-text">--</p>
+                <button type="button" class="btn-copy-result" id="btnCopiar" title="Copiar texto resultante">
+                  <i class="fa-regular fa-copy"></i>
+                  <span id="btnCopyText">Copiar</span>
+                </button>
+              </div>
+
+              <!-- Desglose de Pasos -->
+              <div class="crypto-steps-preview">
+                <span>
+                  <strong style="color: #cbd5e1;">Fórmula:</strong>
+                  <span id="stepFormula">C = (P + 3) mod 26</span>
+                </span>
+                <span>
+                  <strong style="color: #cbd5e1;">Espacios y símbolos:</strong> Preservados intactos
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página Refinado -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <span class="logo-icon-wrap">
+              <i class="fa-solid fa-network-wired"></i>
+            </span>
+            <span>Mi<span class="gradient-text">Portafolio</span></span>
+          </a>
+          <p>
+            Unidad 1: Transmisión y Almacenamiento de Información.
+          </p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#necesidades">Necesidades</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#criptografia">Criptografía</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
         <p>
-          &copy; 2026 Mi Portafolio - Unidad 1 | Teoría y Análisis de
-          Sistemas[cite: 2, 3]
+          &copy; 2026 Mi Portafolio • Teoría, Análisis de Sistemas y Criptografía.
         </p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Script JS -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Botón Volver Arriba Flotante -->
+  <button type="button" class="btn-scroll-top" id="btnScrollTop" aria-label="Volver al inicio de la página"
+    title="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Script JS -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
